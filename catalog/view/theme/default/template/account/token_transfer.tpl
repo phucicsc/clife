@@ -34,7 +34,7 @@ echo $self->load->controller('common/column_left');
                         <div class="row">
                                 <div class="col-md-12">
                                     <div class="alert alert-edit-account" style="display:none">
-                                        <i class="fa fa-check"></i> Edit account successfull
+                                        <i class="fa fa-check"></i> Transfer successfull.
                                     </div>
                                 </div>
                             </div>

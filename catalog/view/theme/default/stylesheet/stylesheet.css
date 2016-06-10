@@ -2567,10 +2567,17 @@ input[type=checkbox], input[type=radio] {
     cursor: pointer;
     padding: 6px ;
 }
+.account-token-transfer #suggesstion-box li:first-child{
+    border-top: 0px;
+}
 .account-token-transfer #suggesstion-box li:hover{
     background: #eee;
 }
 
 .account-token-transfer .easy-autocomplete{
     width: auto !important;
+}
+.alert{
+    height: auto !important;
+    line-height: inherit !important;
 }
