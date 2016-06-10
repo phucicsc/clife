@@ -2526,7 +2526,24 @@ input[type=checkbox], input[type=radio] {
 }
 
 @media (max-width: 970px) {
-    
+    .page-content > .breadcrumb{
+        background: #fff;
+    }
+    #topnav.navbar-yellow .yamm ul li{
+        width: 100%;
+        float: left;
+    }
+    #no-more-tables tr{
+        background: #fff;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    #no-more-tables td{
+        width: 100% !important;
+    }
+    .panel.panel-default{
+        border-color: #fff;
+    }
     #no-more-tables table, 
     #no-more-tables thead, 
     #no-more-tables tbody, 
