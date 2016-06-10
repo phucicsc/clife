@@ -120,7 +120,7 @@ echo $self->load->controller('common/header'); echo $self->load->controller('com
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="alert-success alert" style="padding:0px">
+                                <div class="alert-success alert" style="padding:0px; hieght:380px !important">
                                 <h3>Downline tree analytics</h3>
                                 <div style="padding:8px 14px;padding-top: 14px;">
                                     <table class="table table-bordered table-hover">
