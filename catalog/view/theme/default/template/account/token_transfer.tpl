@@ -52,7 +52,7 @@ echo $self->load->controller('common/column_left');
                                                          <span id="MemberUserName-error" class="field-validation-error">
                                                             <span></span>
                                                         </span>
-                                                        <div id="suggesstion-box" class="list-group"></div>
+                                                        <ul id="suggesstion-box" class="list-group"></ul>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">

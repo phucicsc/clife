@@ -2554,3 +2554,23 @@ input[type=checkbox], input[type=radio] {
     margin: 0px;
     margin-top: 10px;
 }
+
+.account-token-transfer #suggesstion-box{
+    margin-bottom: 0px;
+    position: absolute;
+    width: 50%;
+    z-index: 10;
+}
+
+.account-token-transfer #suggesstion-box li{
+    width: 100%;
+    cursor: pointer;
+    padding: 6px ;
+}
+.account-token-transfer #suggesstion-box li:hover{
+    background: #eee;
+}
+
+.account-token-transfer .easy-autocomplete{
+    width: auto !important;
+}
