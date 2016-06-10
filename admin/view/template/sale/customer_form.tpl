@@ -98,12 +98,7 @@
 
 
                                  </div>
-                                  <div class="form-group ">
-                                    <div class="col-sm-5 ">
-                                       <label class=" control-label" for="input-cmnd">Level</label>
-                                          <input type="text" name="cmnd" value="<?php echo $level; ?>" placeholder="level" id="input-cmnd" class="form-control "/>
-                                    </div>                                  
-                                 </div>
+                                 
                                  <div class="form-group ">
                                     <div class="col-sm-5 ">
                                        <label class=" control-label" for="input-cmnd">Citizenship Card/Passport No</label>                                       
@@ -161,7 +156,7 @@
                                     </div>
                                     <div class="col-sm-1"></div>
                                     <div class="col-sm-6">
-                                       <label class=" control-label" for="input-p_node">Code introduced members</label>
+                                       <label class=" control-label" for="input-p_node">Parrent name</label>
                                        <input type="text" name="p_node_cus"  value="<?php echo $name_parrent;//$p_node//$name_parrent;?>" placeholder="<?php echo $entry_p_node?>" id="input-p_node" class="form-control" <?php if($p_node != '') echo "disabled='disabled'";?>  />
                                        <input type="hidden" name="p_node" value="<?php echo $p_node;?>" /> 
                                        <?php if ($error_p_node) { ?>
@@ -173,22 +168,41 @@
                                        <input  type="text" name="ma_thue" value="<?php echo $ma_thue; ?>" placeholder="Mã số thuế"  id="ma_thue" class="form-control" />
                                        </div> -->
                                  </div>
-                                 <?php /*?>
-                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label" for="input-newsletter"><?php echo $entry_newsletter; ?></label>
-                                    <div class="col-sm-10">
-                                       <select name="newsletter" id="input-newsletter" class="form-control">
-                                          <?php if ($newsletter) { ?>
-                                          <option value="1" selected="selected"><?php echo $text_enabled; ?></option>
-                                          <option value="0"><?php echo $text_disabled; ?></option>
-                                          <?php } else { ?>
-                                          <option value="1"><?php echo $text_enabled; ?></option>
-                                          <option value="0" selected="selected"><?php echo $text_disabled; ?></option>
-                                          <?php } ?>
-                                       </select>
-                                    </div>
-                                 </div>
-                                 <?php */ ?>
+              <div class="form-group ">
+                  <div class="col-sm-5">
+                     <label class=" control-label" for="input-wallet">Account holder</label>
+                     <input type="text" name="account_holder" value="<?php echo $account_holder; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                     <?php if ($error_wallet) { ?>
+                     <div class="text-danger"><?php echo $error_wallet; ?></div>
+                     <?php  } ?>
+                  </div>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-6">
+                     <label class=" control-label" for="input-p_node">Bank name</label>
+                    <input type="text" name="bank_name" value="<?php echo $bank_name; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                     <?php if ($error_wallet) { ?>
+                     <div class="text-danger"><?php echo $error_wallet; ?></div>
+                     <?php  } ?>
+                  </div>
+               
+               </div>
+               <div class="form-group ">
+                  <div class="col-sm-5">
+                     <label class=" control-label" for="input-wallet">Account number</label>
+                    <input type="text" name="account_number" value="<?php echo $account_number; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                     <?php if ($error_wallet) { ?>
+                     <div class="text-danger"><?php echo $error_wallet; ?></div>
+                     <?php  } ?>
+                  </div>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-6">
+                     <label class=" control-label" for="input-p_node">Branch bank</label>
+                    <input type="text" name="branch_bank" value="<?php echo $branch_bank; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                     <?php if ($error_wallet) { ?>
+                     <div class="text-danger"><?php echo $error_wallet; ?></div>
+                     <?php  } ?>
+                  </div>
+               </div>
                                  <div class="form-group">
                                     <div class="col-sm-5 ">
                                        <label class=" control-label" for="input">The monthly membership</label>
@@ -257,7 +271,13 @@
                                              <button style="margin-top:28px" type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
                                              </span>
                                           </div>
-                                    </div>                              
+                                    </div> 
+                                     <div class="form-group ">
+                                    <div class="col-sm-5 ">
+                                       <label class=" control-label" for="input-cmnd">Level</label>
+                                          <input type="text" name="cmnd" value="<?php echo $level; ?>" placeholder="level" id="input-cmnd" class="form-control "/>
+                                    </div>                                  
+                                 </div>                            
                               </div>
                               <?php $address_row = 1; ?>
                               <?php foreach ($addresses as $address) { ?>
