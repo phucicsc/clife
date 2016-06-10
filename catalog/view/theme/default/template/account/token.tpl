@@ -40,32 +40,28 @@ echo $self->load->controller('common/column_left');
                                 <div class="col-md-12">
                                     <div class="panel panel-default">                                        
                                         <div class="panel-body panel-no-padding">
-                                            <div id="example_wrapper" class="dataTables_wrapper form-inline no-footer table-flipscroll">
-                                                <div class="row">
-                                                    <div class="col-sm-6"></div>
-                                                    <div class="col-sm-6"></div>
-                                                </div>
+                                            <div id="no-more-tables" class="panel-body panel-no-padding">
                                                 <table id="example" class="table table-striped table-fixed-header table-hover" cellspacing="0" width="100%">
                                                     <thead>
                                                         <tr>
-                                                            <th>Type</th>
-                                                            <th>Amount</th>
-                                                            <th>System Description</th>
-                                                            <th>User Description</th>
-                                                            <th>Date Time</th>
+                                                            <th>TYPE</th>
+                                                            <th>AMOUNT</th>
+                                                            <th>SYSTEM DESCRIPTION</th>
+                                                            <th>USER DESCRIPTION</th>
+                                                            <th>DATE TIME</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
 
                                                         <?php foreach ($history as $value => $key){ ?>
                                                             <tr>
-                                                                <td align="left"><?php echo $key['type'] ?></td>
-                                                                <td align="left">
+                                                                <td data-title="TYPE" align="left"><?php echo $key['type'] ?></td>
+                                                                <td data-title="AMOUNT" align="left">
                                                                     <strong class="amount"><?php echo $key['amount'] ?></strong>
                                                                 </td>
-                                                                <td align="left"><?php echo $key['system_description'] ?></td>
-                                                                <td style="width:40%" align="left"><?php echo !$key['user_description'] ? '&nbsp;' : $key['user_description'] ?></td>
-                                                                <td align="left">
+                                                                <td data-title="SYSTEM DESCRIPTION" align="left"><?php echo $key['system_description'] ?></td>
+                                                                <td data-title="USER DESCRIPTION" style="width:40%" align="left"><?php echo !$key['user_description'] ? '&nbsp;' : $key['user_description'] ?></td>
+                                                                <td data-title="DATE TIME" align="left">
                                                                     <span class="title-date"><?php echo date("d/m/Y H:i A", strtotime($key['date_added'])); ?></span>
                                                                 </td>
                                                             </tr>

@@ -2458,7 +2458,6 @@ background:none;
 
 @media only screen and (max-width: 990px) {
     
-    / Force table to not be like tables anymore /
     #no-more-tables table, 
     #no-more-tables thead, 
     #no-more-tables tbody, 
@@ -2468,7 +2467,6 @@ background:none;
         display: block; 
     }
  
-    / Hide table headers (but not display: none;, for accessibility) /
     #no-more-tables thead tr { 
         position: absolute;
         top: -9999px;
@@ -2478,7 +2476,6 @@ background:none;
     #no-more-tables tr { border: 1px solid #ccc; }
  
     #no-more-tables td { 
-        / Behave  like a "row" /
         border: none;
         border-bottom: 1px solid #eee; 
         position: relative;
@@ -2488,9 +2485,9 @@ background:none;
     }
  
     #no-more-tables td:before { 
-        / Now like a table header /
+
         position: absolute;
-        / Top/left values mimic padding /
+
         top: 6px;
         left: 6px;
         width: 45%; 
@@ -2580,4 +2577,8 @@ input[type=checkbox], input[type=radio] {
 .alert{
     height: auto !important;
     line-height: inherit !important;
+}
+
+.table>thead>tr>th{
+    border-bottom-width: 1px;
 }
