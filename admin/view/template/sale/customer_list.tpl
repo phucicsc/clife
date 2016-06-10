@@ -7,8 +7,8 @@
       <?php if($getGroupId == 1){?>
       <a href="<?php echo $add; ?>" data-toggle="tooltip" title="<?php echo $button_add; ?>" class="btn btn-primary"><i class="fa fa-plus"></i></a>
      <?php }?>
-      <?php /*?>   <button type="button" data-toggle="tooltip" title="<?php echo $button_delete; ?>" class="btn btn-danger" onclick="confirm('<?php echo $text_confirm; ?>') ? $('#form-customer').submit() : false;"><i class="fa fa-trash-o"></i></button> <?php */ ?>
-      	<button type="button" id="export" data-toggle="tooltip" title="Export" class="btn btn-danger" ><i class="fa fa-download"></i></button>
+      <button type="button" data-toggle="tooltip" title="<?php echo $button_delete; ?>" class="btn btn-danger" onclick="confirm('<?php echo $text_confirm; ?>') ? $('#form-customer').submit() : false;"><i class="fa fa-trash-o"></i></button> 
+
       </div>
 
       <h1><?php echo $heading_title; ?></h1>
