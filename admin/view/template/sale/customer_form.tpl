@@ -147,20 +147,16 @@
                                     </div>
                                  </div>
                                  <div class="form-group ">
-                                    <div class="col-sm-5 required">
-                                       <label class=" control-label" for="input-wallet">Wallet</label>
-                                       <input type="text" name="wallet" value="<?php echo $wallet; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
-                                       <?php if ($error_wallet) { ?>
-                                       <div class="text-danger"><?php echo $error_wallet; ?></div>
-                                       <?php  } ?>
+                                    <div class="col-sm-5 required" >
+                                       
+                                       
                                     </div>
                                     <div class="col-sm-1"></div>
-                                    <div class="col-sm-6">
-                                       <label class=" control-label" for="input-p_node">Parrent name</label>
-                                       <input type="text" name="p_node_cus"  value="<?php echo $name_parrent;//$p_node//$name_parrent;?>" placeholder="<?php echo $entry_p_node?>" id="input-p_node" class="form-control" <?php if($p_node != '') echo "disabled='disabled'";?>  />
-                                       <input type="hidden" name="p_node" value="<?php echo $p_node;?>" /> 
-                                       <?php if ($error_p_node) { ?>
-                                       <div class="text-danger"><?php echo $error_p_node; ?></div>
+                                    <div class="col-sm-6" style="display:none;">
+                                       <label class=" control-label" for="input-wallet">Wallet</label>
+                                       <input type="text" name="wallet" value="1" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                       <?php if ($error_wallet) { ?>
+                                       <div class="text-danger"><?php echo $error_wallet; ?></div>
                                        <?php  } ?>
                                     </div>
                                     <!--  <div class="col-sm-6">
@@ -168,47 +164,56 @@
                                        <input  type="text" name="ma_thue" value="<?php echo $ma_thue; ?>" placeholder="Mã số thuế"  id="ma_thue" class="form-control" />
                                        </div> -->
                                  </div>
-              <div class="form-group ">
-                  <div class="col-sm-5">
-                     <label class=" control-label" for="input-wallet">Account holder</label>
-                     <input type="text" name="account_holder" value="<?php echo $account_holder; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
-                     <?php if ($error_wallet) { ?>
-                     <div class="text-danger"><?php echo $error_wallet; ?></div>
-                     <?php  } ?>
-                  </div>
-                  <div class="col-sm-1"></div>
-                  <div class="col-sm-6">
-                     <label class=" control-label" for="input-p_node">Bank name</label>
-                    <input type="text" name="bank_name" value="<?php echo $bank_name; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
-                     <?php if ($error_wallet) { ?>
-                     <div class="text-danger"><?php echo $error_wallet; ?></div>
-                     <?php  } ?>
-                  </div>
-               
-               </div>
-               <div class="form-group ">
-                  <div class="col-sm-5">
-                     <label class=" control-label" for="input-wallet">Account number</label>
-                    <input type="text" name="account_number" value="<?php echo $account_number; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
-                     <?php if ($error_wallet) { ?>
-                     <div class="text-danger"><?php echo $error_wallet; ?></div>
-                     <?php  } ?>
-                  </div>
-                  <div class="col-sm-1"></div>
-                  <div class="col-sm-6">
-                     <label class=" control-label" for="input-p_node">Branch bank</label>
-                    <input type="text" name="branch_bank" value="<?php echo $branch_bank; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
-                     <?php if ($error_wallet) { ?>
-                     <div class="text-danger"><?php echo $error_wallet; ?></div>
-                     <?php  } ?>
-                  </div>
-               </div>
+                                   <div class="form-group ">
+                                       <div class="col-sm-5">
+                                          <label class=" control-label" for="input-wallet">Account holder</label>
+                                          <input type="text" name="account_holder" value="<?php echo $account_holder; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                          <?php if ($error_wallet) { ?>
+                                          <div class="text-danger"><?php echo $error_wallet; ?></div>
+                                          <?php  } ?>
+                                       </div>
+                                       <div class="col-sm-1"></div>
+                                       <div class="col-sm-6">
+                                          <label class=" control-label" for="input-p_node">Bank name</label>
+                                         <input type="text" name="bank_name" value="<?php echo $bank_name; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                          <?php if ($error_wallet) { ?>
+                                          <div class="text-danger"><?php echo $error_wallet; ?></div>
+                                          <?php  } ?>
+                                       </div>
+                                    
+                                    </div>
+                                    <div class="form-group ">
+                                       <div class="col-sm-5">
+                                          <label class=" control-label" for="input-wallet">Account number</label>
+                                         <input type="text" name="account_number" value="<?php echo $account_number; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                          <?php if ($error_wallet) { ?>
+                                          <div class="text-danger"><?php echo $error_wallet; ?></div>
+                                          <?php  } ?>
+                                       </div>
+                                       <div class="col-sm-1"></div>
+                                       <div class="col-sm-6">
+                                          <label class=" control-label" for="input-p_node">Branch bank</label>
+                                         <input type="text" name="branch_bank" value="<?php echo $branch_bank; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                          <?php if ($error_wallet) { ?>
+                                          <div class="text-danger"><?php echo $error_wallet; ?></div>
+                                          <?php  } ?>
+                                       </div>
+                                    </div>
                                  <div class="form-group">
-                                    <div class="col-sm-5 ">
+                                    <div class="col-sm-5" style="display: none;">
                                        <label class=" control-label" for="input">The monthly membership</label>
                                        <select class="form-control">
                                           <option><?php echo number_format($hv_phi,0,'.',',');?> đ</option>
                                        </select>
+                                    </div>
+                                    <div class="col-sm-5">
+                                       <label class=" control-label" for="input-p_node">Parrent name</label>
+                                       <input type="text" name="p_node_cus"  value="<?php echo $name_parrent;//$p_node//$name_parrent;?>" placeholder="<?php echo $entry_p_node?>" id="input-p_node" class="form-control" <?php if($p_node != '') echo "disabled='disabled'";?>  />
+                                       <input type="hidden" name="p_node" value="<?php echo $p_node;?>" /> 
+                                       <?php if ($error_p_node) { ?>
+                                       <div class="text-danger"><?php echo $error_p_node; ?></div>
+                                       <?php  } ?>
+                                                                           
                                     </div>
                                     <div class="col-sm-1 "></div>
                                     <div class="col-sm-6">

@@ -92,12 +92,23 @@ class ModelSaleCustomer extends Model {
 			
 		}
 		
-		$this->db->query("UPDATE " . DB_PREFIX . "customer SET customer_code = '" . $this->db->escape($data['customer_code']) . "', date_birth = '".$date_birth."', date_cmnd = '".$date_cmnd."', address_cmnd = '" . $this->db->escape($data['address_cmnd']) . "', ma_thue = '" . $this->db->escape($data['ma_thue']) . "', note = '" . $this->db->escape($data['note']) . "', firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "', username = '" . $this->db->escape($data['username']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', custom_field = '" . $this->db->escape(isset($data['custom_field']) ? serialize($data['custom_field']) : '') . "', cmnd = '" . $this->db->escape($data['cmnd']) . "', account_bank = '" . $this->db->escape($data['account_bank']) . "', address_bank = '" . $this->db->escape($data['address_bank']) . "', wallet = '" . $this->db->escape($data['wallet']) . "', country_id = '" . $this->db->escape($data['country_id']) . "', address_cus = '" . $this->db->escape($data['address_cus']) . "',
-			img_profile = '" . $this->db->escape($data['img_profile']) . "',
+		$this->db->query("
+			UPDATE " . DB_PREFIX . "customer SET 
+			customer_code = '" . $this->db->escape($data['customer_code']) . "', 
+			date_birth = '".$date_birth."', 	
+			note = '" . $this->db->escape($data['note']) . "', 
+			email = '" . $this->db->escape($data['email']) . "', 
+			username = '" . $this->db->escape($data['username']) . "',
+			telephone = '" . $this->db->escape($data['telephone']) . "', 
+			custom_field = '" . $this->db->escape(isset($data['custom_field']) ? serialize($data['custom_field']) : '') . "', cmnd = '" . $this->db->escape($data['cmnd']) . "',
+			account_bank = '" . $this->db->escape($data['account_bank']) . "', 
+			country_id = '" . $this->db->escape($data['country_id']) . "', 
+			address_cus = '" . $this->db->escape($data['address_cus']) . "', 
 			account_holder = '" . $this->db->escape($data['account_holder']) . "',
 			bank_name = '" . $this->db->escape($data['bank_name']) . "',
-			account_number = '" . $this->db->escape($data['account_number']) . "',
-			branch_bank = '" . $this->db->escape($data['branch_bank']) . "',date_added = '".$date_create."' WHERE customer_id = '" . (int)$customer_id . "'");
+			account_number = '" . $this->db->escape($data['account_number']) . "',	
+			branch_bank = '" . $this->db->escape($data['branch_bank']) . "',
+			date_added = '".$date_create."' WHERE customer_id = '" . (int)$customer_id . "'");
 
 		if ($data['password']) {
 			$this->db->query("UPDATE " . DB_PREFIX . "customer SET salt = '" . $this->db->escape($salt = substr(md5(uniqid(rand(), true)), 0, 9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "' WHERE customer_id = '" . (int)$customer_id . "'");
