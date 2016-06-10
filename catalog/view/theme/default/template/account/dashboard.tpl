@@ -157,7 +157,7 @@ echo $self->load->controller('common/header'); echo $self->load->controller('com
 
                                              <div class="readMore" data-url="/Home/Announcement?id=3">
                                                 <h5>
-                                                    <a href="<?php //echo $self->url->link('simple_blog/article/viewBlogs', 'token='.$value["simple_blog_article_id"].'', 'SSL'); ?>">
+                                                    <a href="<?php echo $self->url->link('simple_blog/article/viewBlogs', 'token='.$value["simple_blog_article_id"].'', 'SSL'); ?>">
                                                         <?php echo html_entity_decode($value['article_title'], ENT_QUOTES, 'UTF-8')?>
                                                     </a>
                                                 </h5>
