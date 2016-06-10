@@ -276,7 +276,7 @@ class ControllerSaleCustomer extends Controller {
 		
 	//
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') ) {
-			
+					
 			$this->model_sale_customer->update_status($this->request->post['status'], $this->request->get['customer_id']);
 			$this->model_sale_customer->editCustomer($this->request->get['customer_id'], $this->request->post);
 
@@ -1279,6 +1279,38 @@ class ControllerSaleCustomer extends Controller {
 		} else {
 			$data['telephone'] = '';
 		}
+
+
+		if (isset($this->request->post['account_holder'])) {
+			$data['account_holder'] = $this->request->post['account_holder'];
+		} elseif (!empty($customer_info)) {
+			$data['account_holder'] = $customer_info['account_holder'];
+		} else {
+			$data['account_holder'] = '';
+		}
+		if (isset($this->request->post['bank_name'])) {
+			$data['bank_name'] = $this->request->post['bank_name'];
+		} elseif (!empty($customer_info)) {
+			$data['bank_name'] = $customer_info['bank_name'];
+		} else {
+			$data['bank_name'] = '';
+		}
+		if (isset($this->request->post['account_number'])) {
+			$data['account_number'] = $this->request->post['account_number'];
+		} elseif (!empty($customer_info)) {
+			$data['account_number'] = $customer_info['account_number'];
+		} else {
+			$data['account_number'] = '';
+		}
+		if (isset($this->request->post['branch_bank'])) {
+			$data['branch_bank'] = $this->request->post['branch_bank'];
+		} elseif (!empty($customer_info)) {
+			$data['branch_bank'] = $customer_info['branch_bank'];
+		} else {
+			$data['branch_bank'] = '';
+		}
+
+
 		
 			
 		
