@@ -607,3 +607,51 @@
 2016-06-10 2:24:24 - PHP Notice:  Undefined index: customer in /var/www/clife/catalog/controller/account/token.php on line 65
 2016-06-10 2:24:24 - PHP Notice:  Undefined index: TransferPassword in /var/www/clife/catalog/controller/account/token.php on line 76
 2016-06-10 2:24:24 - PHP Notice:  Undefined index: pin in /var/www/clife/catalog/controller/account/token.php on line 81
+2016-06-10 4:27:49 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 4:27:49 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 4:28:26 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 4:28:26 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 4:28:46 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 4:28:46 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 6:39:24 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 6:39:24 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 6:39:35 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 6:41:43 - PHP Notice:  Error: Unknown column 'short_description' in 'field list'<br />Error No: 1054<br />INSERT INTO `sm_simple_blog_article_description` SET simple_blog_article_id = '42', language_id = '1', article_title = 'test', description = '&lt;p&gt;sdfa&lt;/p&gt;', short_description = 'sdaf', meta_description = '', meta_keyword = '' in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/system/library/db/mysqli.php on line 41
+2016-06-10 6:41:43 - PHP Notice:  Error: Unknown column 'short_description' in 'field list'<br />Error No: 1054<br />INSERT INTO `sm_simple_blog_article_description` SET simple_blog_article_id = '42', language_id = '2', article_title = 'sdaf', description = '&lt;p&gt;sdfasd&lt;/p&gt;', short_description = 'sdfasd', meta_description = '', meta_keyword = '' in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/system/library/db/mysqli.php on line 41
+2016-06-10 6:41:43 - PHP Notice:  Undefined index: article_addition_description in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/model/simple_blog/article.php on line 32
+2016-06-10 6:41:43 - PHP Warning:  Invalid argument supplied for foreach() in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/model/simple_blog/article.php on line 32
+2016-06-10 6:41:43 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/index.php:84) in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/system/library/response.php on line 12
+2016-06-10 6:43:31 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 6:43:31 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 6:43:34 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 6:43:49 - PHP Notice:  Undefined index: article_addition_description in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/model/simple_blog/article.php on line 32
+2016-06-10 6:43:49 - PHP Warning:  Invalid argument supplied for foreach() in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/model/simple_blog/article.php on line 32
+2016-06-10 6:43:49 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/index.php:84) in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/system/library/response.php on line 12
+2016-06-10 6:47:51 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 6:47:55 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 6:48:21 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 6:48:22 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 6:48:30 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 6:48:30 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 6:58:26 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 6:58:26 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 6:58:35 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 6:58:35 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 6:58:56 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 6:58:56 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 7:00:54 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 7:00:54 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 7:01:16 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 7:02:07 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 7:03:12 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 7:04:07 - PHP Notice:  Undefined index: article_addition_description in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/model/simple_blog/article.php on line 32
+2016-06-10 7:04:07 - PHP Warning:  Invalid argument supplied for foreach() in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/model/simple_blog/article.php on line 32
+2016-06-10 7:04:07 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/index.php:84) in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/system/library/response.php on line 12
+2016-06-10 7:04:25 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 7:04:38 - PHP Notice:  Undefined index: article_addition_description in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/model/simple_blog/article.php on line 32
+2016-06-10 7:04:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/model/simple_blog/article.php on line 32
+2016-06-10 7:04:38 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/index.php:84) in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/system/library/response.php on line 12
+2016-06-10 7:04:47 - PHP Notice:  Undefined variable: customer in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 2
+2016-06-10 7:04:47 - PHP Notice:  Undefined variable: total in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/dashboard/customer.tpl on line 5
+2016-06-10 7:23:29 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
+2016-06-10 7:24:53 - PHP Notice:  Undefined variable: article_row in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/admin/view/template/simple_blog/article_form.tpl on line 547
