@@ -167,7 +167,7 @@
                                    <div class="form-group ">
                                        <div class="col-sm-5">
                                           <label class=" control-label" for="input-wallet">Account holder</label>
-                                          <input type="text" name="account_holder" value="<?php echo $account_holder; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                          <input type="text" name="account_holder" value="<?php echo $account_holder; ?>" id="input-wallet" class="form-control" />
                                           <?php if ($error_wallet) { ?>
                                           <div class="text-danger"><?php echo $error_wallet; ?></div>
                                           <?php  } ?>
@@ -175,7 +175,7 @@
                                        <div class="col-sm-1"></div>
                                        <div class="col-sm-6">
                                           <label class=" control-label" for="input-p_node">Bank name</label>
-                                         <input type="text" name="bank_name" value="<?php echo $bank_name; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                         <input type="text" name="bank_name" value="<?php echo $bank_name; ?>"  id="input-wallet" class="form-control" />
                                           <?php if ($error_wallet) { ?>
                                           <div class="text-danger"><?php echo $error_wallet; ?></div>
                                           <?php  } ?>
@@ -185,7 +185,7 @@
                                     <div class="form-group ">
                                        <div class="col-sm-5">
                                           <label class=" control-label" for="input-wallet">Account number</label>
-                                         <input type="text" name="account_number" value="<?php echo $account_number; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                         <input type="text" name="account_number" value="<?php echo $account_number; ?>"  id="input-wallet" class="form-control" />
                                           <?php if ($error_wallet) { ?>
                                           <div class="text-danger"><?php echo $error_wallet; ?></div>
                                           <?php  } ?>
@@ -193,7 +193,7 @@
                                        <div class="col-sm-1"></div>
                                        <div class="col-sm-6">
                                           <label class=" control-label" for="input-p_node">Branch bank</label>
-                                         <input type="text" name="branch_bank" value="<?php echo $branch_bank; ?>" placeholder="<?php echo $entry_wallet; ?>" id="input-wallet" class="form-control" />
+                                         <input type="text" name="branch_bank" value="<?php echo $branch_bank; ?>" id="input-wallet" class="form-control" />
                                           <?php if ($error_wallet) { ?>
                                           <div class="text-danger"><?php echo $error_wallet; ?></div>
                                           <?php  } ?>

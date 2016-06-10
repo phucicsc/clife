@@ -67,34 +67,15 @@ class ModelSaleCustomer extends Model {
 	}
 
 	public function editCustomer($customer_id, $data) {
-		if (!isset($data['custom_field'])) {
-			$data['custom_field'] = array();
-		}
-		
 		if($data['date_create'] == ''){
 			$date_create = date('Y-m-d');
 		}else{
 			$date_create = date('Y-m-d',strtotime(str_replace("/","-",$data['date_create'])));
 			
-		}
-		
-		if($data['date_birth'] == ''){
-			$date_birth = '';
-		}else{
-			$date_birth = date('Y-m-d',strtotime(str_replace("/","-",$data['date_birth'])));
-			
-		}
-		
-		if($data['date_cmnd'] == ''){
-			$date_cmnd = '';
-		}else{
-			$date_cmnd = date('Y-m-d',strtotime(str_replace("/","-",$data['date_cmnd'])));
-			
-		}
+		}		
 		
 		$this->db->query("
 			UPDATE " . DB_PREFIX . "customer SET 
-			customer_code = '" . $this->db->escape($data['customer_code']) . "', 
 			date_birth = '".$date_birth."', 	
 			note = '" . $this->db->escape($data['note']) . "', 
 			email = '" . $this->db->escape($data['email']) . "', 
