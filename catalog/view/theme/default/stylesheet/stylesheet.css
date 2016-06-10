@@ -2320,19 +2320,7 @@ background:none;
     }
 }
 
-@media (min-width: 767px) {
-    .table-striped > tbody > tr {
-        height: 30px;
-    }
-    .table > tbody > tr > td,
-    .table > tbody > tr > th,
-    .table > tfoot > tr > td,
-    .table > tfoot > tr > th,
-    .table > thead > tr > td,
-    .table > thead > tr > th {
-        line-height: 30px;
-    }
-}
+
 
 @media (max-width: 992px) {
     .home-info-title .title{
@@ -2456,52 +2444,6 @@ background:none;
     }
 }
 
-@media only screen and (max-width: 990px) {
-    
-    #no-more-tables table, 
-    #no-more-tables thead, 
-    #no-more-tables tbody, 
-    #no-more-tables th, 
-    #no-more-tables td, 
-    #no-more-tables tr { 
-        display: block; 
-    }
- 
-    #no-more-tables thead tr { 
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
- 
-    #no-more-tables tr { border: 1px solid #ccc; }
- 
-    #no-more-tables td { 
-        border: none;
-        border-bottom: 1px solid #eee; 
-        position: relative;
-        padding-left: 50%; 
-        white-space: normal;
-        text-align:left;
-    }
- 
-    #no-more-tables td:before { 
-
-        position: absolute;
-
-        top: 6px;
-        left: 6px;
-        width: 45%; 
-        padding-right: 10px; 
-        white-space: normal;
-        text-align:left;
-        font-weight: bold;
-    }
- 
-    /*
-    Label the data
-    */
-    #no-more-tables td:before { content: attr(data-title); }
-}
 
 
 #tt {
@@ -2581,4 +2523,47 @@ input[type=checkbox], input[type=radio] {
 
 .table>thead>tr>th{
     border-bottom-width: 1px;
+}
+
+@media (max-width: 970px) {
+    
+    #no-more-tables table, 
+    #no-more-tables thead, 
+    #no-more-tables tbody, 
+    #no-more-tables th, 
+    #no-more-tables td, 
+    #no-more-tables tr { 
+        display: block; 
+    }
+ 
+    #no-more-tables thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+ 
+    #no-more-tables tr { border: 1px solid #ccc; }
+ 
+    #no-more-tables td { 
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+        white-space: normal;
+        text-align:left;
+    }
+ 
+    #no-more-tables td:before { 
+
+        position: absolute;
+
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: normal;
+        text-align:left;
+        font-weight: bold;
+    }
+    #no-more-tables td:before { content: attr(data-title); }
 }
