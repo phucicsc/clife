@@ -133,6 +133,30 @@
     			$this->response->setOutput($this->load->view('default/template/simple_blog/article.tpl', $data));
     		}	
 		}
+		public function viewBlogs(){
+	
+			//method to call function
+
+			
+			$id_ = $this -> request -> get['token'];
+
+
+			if ($this -> request -> server['HTTPS']) {
+				$server = $this -> config -> get('config_ssl');
+			} else {
+				$server = $this -> config -> get('config_url');
+			}
+			$data['base'] = $server;
+			$data['self'] = $this;
+			$this->load->model('simple_blog/article');
+			 $data['detail_articles'] = $this->model_simple_blog_article->getArticlesBlogs($id_);        	
+		
+			if (file_exists(DIR_TEMPLATE . $this -> config -> get('config_template') . '/template/simple_blog/showblog.tpl')) {
+			$this -> response -> setOutput($this -> load -> view($this -> config -> get('config_template') . '/template/simple_blog/showblog.tpl', $data));
+		} else {
+			$this -> response -> setOutput($this -> load -> view('default/template/simple_blog/login.tpl', $data));
+		}
+		}
 
 		public function view() {
 			$this->language->load('simple_blog/article');
