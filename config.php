@@ -1,4 +1,5 @@
 <?php
+
 if($_SERVER['SERVER_NAME'] === '192.168.0.68'){
 	// DIR HOST
 	define('DIR_HOST', '/var/www/clife/');
@@ -12,12 +13,13 @@ if($_SERVER['SERVER_NAME'] === '192.168.0.68'){
 	define('DB_PASSWORD', 'admin123@');
 	define('DB_DATABASE', 'clife');
 }else{
+
 	// DIR HOST
-	define('DIR_HOST', '/home/mb.changelifeeasy.helpmb.changelifeeasy.help');
+	define('DIR_HOST', '/home/mb.changelifeeasy.help/mb.changelifeeasy.help/');
 	// HTTP
-	define('HTTP_SERVER', 'http://mb.changelifeeasy.help');
+	define('HTTP_SERVER', 'http://mb.changelifeeasy.help/');
 	// HTTPS
-	define('HTTPS_SERVER', 'http://mb.changelifeeasy.help');
+	define('HTTPS_SERVER', 'http://mb.changelifeeasy.help/');
 
 	// DB
 	define('DB_USERNAME', 'mb_changelifeea');
