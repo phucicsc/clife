@@ -75,13 +75,11 @@ class ModelSaleCustomer extends Model {
 		}		
 		
 		$this->db->query("
-			UPDATE " . DB_PREFIX . "customer SET 
-			date_birth = '".$date_birth."', 	
-			note = '" . $this->db->escape($data['note']) . "', 
+			UPDATE " . DB_PREFIX . "customer SET 	
 			email = '" . $this->db->escape($data['email']) . "', 
 			username = '" . $this->db->escape($data['username']) . "',
 			telephone = '" . $this->db->escape($data['telephone']) . "', 
-			custom_field = '" . $this->db->escape(isset($data['custom_field']) ? serialize($data['custom_field']) : '') . "', cmnd = '" . $this->db->escape($data['cmnd']) . "',
+			cmnd = '" . $this->db->escape($data['cmnd']) . "',
 			account_bank = '" . $this->db->escape($data['account_bank']) . "', 
 			country_id = '" . $this->db->escape($data['country_id']) . "', 
 			address_cus = '" . $this->db->escape($data['address_cus']) . "', 
