@@ -69,6 +69,13 @@ class ControllerAccountToken extends Controller {
 			$UTree=explode(',', $Tree);
 			unset($UTree[0]);
 
+			//get customer partent
+			$customerParent = $this->model_account_customer->getCustomer( $this -> session -> data['customer_id']);
+			$customerParent = $customerParent['p_node'];
+			$customerParent = $this->model_account_customer->getCustomer($customerParent);
+			array_push($UTree, $customerParent['username']);
+		
+
 			$customers=in_array($customer, $UTree) ? 1 : 0;
 
 			$json['customer'] = intval($customers) === 0 ? -1 : 1;
@@ -143,16 +150,11 @@ class ControllerAccountToken extends Controller {
 
 			$tree=explode(',', $this->model_account_customer->getCustomLike($this -> request -> post['keyword'],  $this -> session -> data['customer_id']));
 			unset($tree[0]);
-			
 			//get customer partent
-			$customerParent = $this->model_account_customer->getTableCustomerMLByUsername($this -> session -> data['customer_id']);
-
+			$customerParent = $this->model_account_customer->getCustomer( $this -> session -> data['customer_id']);
 			$customerParent = $customerParent['p_node'];
-
-			$customerParent = $this->model_account_customer->getCustomer($customerParent['p_node']);
-			// $customerParent = $customerParent['username'];
-			print_r($customerParent);
-			die();
+			$customerParent = $this->model_account_customer->getCustomer($customerParent);
+			array_push($tree, $customerParent['username']);
 
 			foreach ($tree as $key => $value) {			
 				echo $value ? '<li class="list-group-item" onClick="selectU('."'".$value."'".');">'.$value.'</li>' : ''; 

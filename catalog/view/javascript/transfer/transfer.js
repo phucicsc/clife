@@ -11,6 +11,19 @@ $( document ).ready(function() {
         }
     });
 
+
+    var transfer = {
+        errorReset : function(){
+            $('#MemberUserName').parent().removeClass('has-error');
+            $('#MemberUserName-error span').hide().html('');
+            $('#Quantity').parent().removeClass('has-error');
+            $('#Quantity-error span').hide().html('');
+            $('#TransferPassword').parent().removeClass('has-error');
+            $('#TransferPassword-error span').hide().html('');
+        },
+    }
+
+
     $('#frmCreatePin').on('submit', function(){
         transfer.errorReset();
         if (!$('#MemberUserName').existsWithValue()) {

@@ -598,3 +598,12 @@
 2016-06-09 22:10:11 - PHP Notice:  Undefined variable: class in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/catalog/view/theme/default/template/account/forgotten.tpl on line 5
 2016-06-09 23:12:48 - PHP Notice:  Undefined variable: class in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/catalog/view/theme/default/template/account/forgotten.tpl on line 5
 2016-06-09 23:12:53 - PHP Notice:  Undefined variable: class in /home/mb.changelifeeasy.help/mb.changelifeeasy.help/catalog/view/theme/default/template/account/forgotten.tpl on line 5
+2016-06-10 2:23:31 - PHP Notice:  Undefined variable: idUser in /var/www/clife/catalog/controller/account/token.php on line 147
+2016-06-10 2:23:31 - PHP Notice:  Undefined index: p_node in /var/www/clife/catalog/controller/account/token.php on line 148
+2016-06-10 2:23:31 - PHP Notice:  Undefined index: username in /var/www/clife/catalog/controller/account/token.php on line 150
+2016-06-10 2:23:51 - PHP Notice:  Undefined index: customer in /var/www/clife/catalog/controller/account/token.php on line 65
+2016-06-10 2:23:51 - PHP Notice:  Undefined index: TransferPassword in /var/www/clife/catalog/controller/account/token.php on line 76
+2016-06-10 2:23:51 - PHP Notice:  Undefined index: pin in /var/www/clife/catalog/controller/account/token.php on line 81
+2016-06-10 2:24:24 - PHP Notice:  Undefined index: customer in /var/www/clife/catalog/controller/account/token.php on line 65
+2016-06-10 2:24:24 - PHP Notice:  Undefined index: TransferPassword in /var/www/clife/catalog/controller/account/token.php on line 76
+2016-06-10 2:24:24 - PHP Notice:  Undefined index: pin in /var/www/clife/catalog/controller/account/token.php on line 81
