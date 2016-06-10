@@ -147,6 +147,15 @@ class ModelAccountCustomer extends Model {
 		return $query -> row;
 	}
 
+	public function getTableCustomerMLByUsername($customer_id){
+		$query = $this -> db -> query("
+			SELECT *
+			FROM  ".DB_PREFIX."customer_ml
+			WHERE customer_id = '".$customer_id."'
+		");
+
+		return $query -> row;
+	}
 
 	public function getR_Wallet($id_customer){
 		$query = $this -> db -> query("

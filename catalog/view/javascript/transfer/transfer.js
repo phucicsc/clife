@@ -10,44 +10,6 @@ $( document ).ready(function() {
             event.preventDefault();
         }
     });
-    var options = {
-        url: function(customer_name) {
-            return $("#MemberUserName").data('link');
-        },
-
-        getValue: function(element) {
-            return element.name;
-        },
-        ajaxSettings: {
-            dataType: "json",
-            method: "GET",
-            data: {
-            }
-        },
-
-        preparePostData: function(data) {
-            data.customer_name = $("#MemberUserName").val();
-            return data;
-        },
-        list: {
-	        maxNumberOfElements: 8,
-	    },
-
-        requestDelay: 400
-    };
-    $("#MemberUserName").easyAutocomplete(options);
-
-    var transfer = {
-        errorReset : function(){
-            $('#MemberUserName').parent().removeClass('has-error');
-            $('#MemberUserName-error span').hide().html('');
-            $('#Quantity').parent().removeClass('has-error');
-            $('#Quantity-error span').hide().html('');
-            $('#TransferPassword').parent().removeClass('has-error');
-            $('#TransferPassword-error span').hide().html('');
-        },
-    }
-
 
     $('#frmCreatePin').on('submit', function(){
         transfer.errorReset();

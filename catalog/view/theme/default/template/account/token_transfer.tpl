@@ -123,7 +123,7 @@ echo $self->load->controller('common/column_left');
                 $("#suggesstion-box").show();
                 $("#suggesstion-box").html(data);
                 $("#MemberUserName").css("background","#FFF");            
-             }
+            }
             });
         });
     }); 

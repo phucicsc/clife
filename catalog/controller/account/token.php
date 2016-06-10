@@ -140,25 +140,28 @@ class ControllerAccountToken extends Controller {
 	public function getaccount(){
 		if($this->customer->isLogged() && $this -> request -> post['keyword'] ) {
 			$this->load->model('account/customer');
-			$keyword = $this -> request -> post['keyword'];
-			$id_user= $this -> session -> data['customer_id'];
-			 $Tree= $this->model_account_customer->getCustomLike($keyword, $id_user); 
-			$UTree=explode(',', $Tree);
-			//$this -> response -> setOutput(json_encode($json));
-			unset($UTree[0]);		
+
+			$tree=explode(',', $this->model_account_customer->getCustomLike($this -> request -> post['keyword'],  $this -> session -> data['customer_id']));
+			unset($tree[0]);
 			
-			foreach ($UTree as $key => $value) {			
+			//get customer partent
+			$customerParent = $this->model_account_customer->getTableCustomerMLByUsername($this -> session -> data['customer_id']);
+
+			$customerParent = $customerParent['p_node'];
+
+			$customerParent = $this->model_account_customer->getCustomer($customerParent['p_node']);
+			// $customerParent = $customerParent['username'];
+			print_r($customerParent);
+			die();
+
+			foreach ($tree as $key => $value) {			
 				echo $value ? '<li class="list-group-item" onClick="selectU('."'".$value."'".');">'.$value.'</li>' : ''; 
-			}	
+			}
 		}
 	}
 
 
 	public function transfer(){
-
-
-		
-		
 
 		function myCheckLoign($self) {
 			return $self->customer->isLogged() ? true : false;
